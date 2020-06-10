@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demoservice
+server:
+  port: 8080
+
+# boyle veya logback.xml'de verilebilir. aaalogback.xml'i rename edersen o aktif olur.
+logging:
+  file:
+    name: /ws/temp/44/boot.log
+  level:
+    root: INFO
+---
+spring:
+  profiles: dev
+  application:
+    name: demoservice
+server:
+  port: 9090
+
+---
+spring:
+  profiles: prod
+  application:
+    name: demoservice
+server:
+  port: 4431
