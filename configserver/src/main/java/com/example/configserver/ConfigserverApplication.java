@@ -12,6 +12,9 @@ public class ConfigserverApplication {
 	açıldıktan sonra:
 	http://localhost:8888/config-client/default/master
 
+	DEV profile
+	http://localhost:8888/config-client/dev
+
 	 */
 
 	public static void main(String[] args) {
